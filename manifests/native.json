@@ -1419,6 +1419,16 @@
         "id": "Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods"
       }
     },
+    "es5-shim": {
+      "id": "es5-shim",
+      "type": "removal",
+      "description": "Every modern environment has support for ES5 APIs."
+    },
+    "es6-shim": {
+      "id": "es6-shim",
+      "type": "removal",
+      "description": "Every modern environment has support for ES6/ES2015 APIs."
+    },
     "es7-shim": {
       "id": "es7-shim",
       "type": "removal",
@@ -1962,10 +1972,20 @@
       "moduleName": "es-string-html-methods",
       "replacements": ["es-string-html-methods"]
     },
+    "es5-shim": {
+      "type": "module",
+      "moduleName": "es5-shim",
+      "replacements": ["es5-shim"]
+    },
     "es6-promise": {
       "type": "module",
       "moduleName": "es6-promise",
       "replacements": ["Promise"]
+    },
+    "es6-shim": {
+      "type": "module",
+      "moduleName": "es6-shim",
+      "replacements": ["es6-shim"]
     },
     "es7-shim": {
       "type": "module",
