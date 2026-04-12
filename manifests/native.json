@@ -2474,6 +2474,11 @@
       "moduleName": "queue-microtask",
       "replacements": ["queueMicrotask"]
     },
+    "queue-tick": {
+      "type": "module",
+      "moduleName": "queue-tick",
+      "replacements": ["queueMicrotask"]
+    },
     "reflect.getprototypeof": {
       "type": "module",
       "moduleName": "reflect.getprototypeof",
