@@ -1881,6 +1881,11 @@
       "moduleName": "arraybuffer.prototype.slice",
       "replacements": ["ArrayBuffer.prototype.slice"]
     },
+    "arraybuffer.slice": {
+      "type": "module",
+      "moduleName": "arraybuffer.slice",
+      "replacements": ["ArrayBuffer.prototype.slice"]
+    },
     "asynciterator.prototype": {
       "type": "module",
       "moduleName": "asynciterator.prototype",
