@@ -4,7 +4,7 @@ description: Modern alternatives to the bcrypt package for password hashing
 
 # Replacements for `bcrypt`
 
-The native `bcrypt` package is a Node addon. Depending on your constraints, you may prefer a pure JavaScript implementation, or move to built-in cryptographic primitives.
+The `bcrypt` package can be replaced by native functionality in most runtimes, or more performant packages.
 
 ## `bcryptjs`
 
@@ -14,16 +14,14 @@ The native `bcrypt` package is a Node addon. Depending on your constraints, you 
 import bcrypt from 'bcrypt' // [!code --]
 import bcrypt from 'bcryptjs' // [!code ++]
 
-const salt = await bcrypt.genSalt(10) // [!code --]
-const salt = await bcrypt.genSalt(10) // [!code ++]
+const salt = await bcrypt.genSalt(10)
 
-const hash = await bcrypt.hash('password', salt) // [!code --]
-const hash = await bcrypt.hash('password', salt) // [!code ++]
+const hash = await bcrypt.hash('password', salt)
 ```
 
 ## `node:crypto` (native, Node.js built-in)
 
-Node provides [`node:crypto`](https://nodejs.org/api/crypto.html) for secure password hashing primitives (for example `scrypt` and `pbkdf2`). This is not a drop-in `bcrypt` API replacement, but it is a common “remove `bcrypt`” direction when you can standardize on a different KDF.
+Node provides [`node:crypto`](https://nodejs.org/api/crypto.html) for secure password hashing primitives (for example `scrypt` and `pbkdf2`). This is not a drop-in `bcrypt` API replacement, but is a good option if you can switch to a more secure cryptographic algorithm it supports.
 
 ## Web Crypto API (native)
 
