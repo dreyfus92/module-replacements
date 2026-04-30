@@ -96,6 +96,12 @@
       "description": "Every modern runtime provides a way to get the iterator function through the `Symbol.iterator` symbol.",
       "example": "const iterator = obj[Symbol.iterator]?.()"
     },
+    "snippet::has-ansi": {
+      "id": "snippet::has-ansi",
+      "type": "simple",
+      "description": "You can use the `includes` method on the string to check if a specific ANSI byte is present.",
+      "example": "string.includes(\"\u001B\") || string.includes(\"\u009B\")"
+    },
     "snippet::has-argv": {
       "id": "snippet::has-argv",
       "type": "simple",
@@ -466,6 +472,11 @@
       "type": "module",
       "moduleName": "for-own",
       "replacements": ["snippet::for-own"]
+    },
+    "has-ansi": {
+      "type": "module",
+      "moduleName": "has-ansi",
+      "replacements": ["snippet::has-ansi"]
     },
     "has-flag": {
       "type": "module",
