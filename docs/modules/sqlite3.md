@@ -37,20 +37,3 @@ const db = new Database('app.db') // [!code ++]
 db.all('SELECT * FROM users', (err, rows) => {}) // [!code --]
 const rows = db.prepare('SELECT * FROM users').all() // [!code ++]
 ```
-
-## `sqlite`
-
-[`sqlite`](https://github.com/kriasoft/node-sqlite) is an actively maintained option commonly used for promise-based APIs.
-
-Example:
-
-```ts
-import sqlite3 from 'sqlite3' // [!code --]
-import { open } from 'sqlite' // [!code ++]
-
-const db = new sqlite3.Database('app.db') // [!code --]
-const db = await open({ filename: 'app.db', driver: sqlite3.Database }) // [!code ++]
-
-db.all('SELECT * FROM users', (err, rows) => {}) // [!code --]
-const rows = await db.all('SELECT * FROM users') // [!code ++]
-```

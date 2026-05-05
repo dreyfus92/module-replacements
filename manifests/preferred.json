@@ -2579,7 +2579,7 @@
     "sqlite3": {
       "type": "module",
       "moduleName": "sqlite3",
-      "replacements": ["node:sqlite", "better-sqlite3", "sqlite"],
+      "replacements": ["node:sqlite", "better-sqlite3"],
       "url": {"type": "e18e", "id": "sqlite3"}
     },
     "stream-buffers": {
@@ -3345,11 +3345,6 @@
       "id": "sortobject",
       "type": "documented",
       "replacementModule": "sortobject"
-    },
-    "sqlite": {
-      "id": "sqlite",
-      "type": "documented",
-      "replacementModule": "sqlite"
     },
     "streams": {
       "id": "streams",
