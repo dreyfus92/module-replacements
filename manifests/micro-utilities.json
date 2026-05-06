@@ -100,7 +100,7 @@
       "id": "snippet::has-ansi",
       "type": "simple",
       "description": "You can use the `includes` method on the string to check if a specific ANSI byte is present.",
-      "example": "string.includes(\"\u001b\") || string.includes(\"\")"
+      "example": "string.includes(\"\\u001b\") || string.includes(\"\\u009b\")"
     },
     "snippet::has-argv": {
       "id": "snippet::has-argv",
