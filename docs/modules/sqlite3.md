@@ -4,7 +4,7 @@ description: Modern alternatives to the sqlite3 package for working with SQLite 
 
 # Replacements for `sqlite3`
 
-## `node:sqlite` (native, Node.js)
+## `node:sqlite` (native, since Node.js 22.13.0)
 
 Node.js ships a built-in SQLite module, [`node:sqlite`](https://nodejs.org/api/sqlite.html), which is the preferred option when you can target a recent Node runtime.
 
